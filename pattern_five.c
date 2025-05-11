@@ -3,7 +3,7 @@
 // {
 //     int n;
 //     scanf("%d", &n);
-//     int star = 1;
+//     int val = 1;
 //     int space = n-1;
 //     for(int i=1; i<=n; i++) // for line print
 //     {
@@ -11,12 +11,12 @@
 //         {
 //             printf(" ");
 //         }
-//         for(int j=1; j<=star; j++) // for star
+//         for(int j=1; j<=val; j++) // for star
 //         {
-//             printf("*");
+//             printf("%d", j);
 //         }
 //         printf("\n");
-//         star ++;
+//         val ++;
 //         space--;
 //     }
 //     return 0;
@@ -27,7 +27,7 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    int star = 1;
+    int val = 1;
     int space = n-1;
     for(int i=1; i<=n; i++) // for line print
     {
@@ -35,12 +35,12 @@ int main()
         {
             printf(" ");
         }
-        for(int j=1; j<=star; j++) // for star
+        for(int j=1; j<=val; j++) // for star
         {
-            printf("* ");
+            printf("%d ", j);
         }
         printf("\n");
-        star ++;
+        val ++;
         space--;
     }
     return 0;
